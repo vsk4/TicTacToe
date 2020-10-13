@@ -10,8 +10,8 @@ namespace TicTacToeGame
             char[] board = game.createBoard();
             game.choosePlayerLetter();
             game.showBoard(board);
+            game.toss();
             game.userMove(board);
-            Console.WriteLine("dfasdf");
         }
     }
 }

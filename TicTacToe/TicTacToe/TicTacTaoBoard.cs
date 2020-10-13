@@ -6,9 +6,9 @@ namespace TicTacToeGame
 {
     class TicTacToeGame
     {
-        char playerLetter,compLetter;
+        char playerLetter, compLetter;
         public const int HEAD = 1;
-        public const int TAIL = 1;
+        public const int TAIL = 0;
         public char[] createBoard()
         {
             char[] board = new char[10];
@@ -22,8 +22,6 @@ namespace TicTacToeGame
         {
             Console.WriteLine("Choose either X or O");
             playerLetter = char.ToUpper(Console.ReadLine()[0]);
-            //char compLetter;
-
             if (playerLetter.Equals('X') || playerLetter.Equals('O'))
             {
                 if (playerLetter.Equals('X'))
@@ -59,7 +57,6 @@ namespace TicTacToeGame
                 Console.WriteLine("Your Move is Valid");
                 board[move] = playerLetter;
                 showBoard(board);
-                
             }
             else
             {
@@ -73,11 +70,11 @@ namespace TicTacToeGame
             int tossWon = random.Next(0, 2);
             if (tossWon == HEAD)
             {
-                Console.WriteLine("User will play first");
+                Console.WriteLine("\n \n User will play first \n \n");
             }
             else
             {
-                Console.WriteLine("Computer will play first");
+                Console.WriteLine("\n \n Computer will play first \n \n ");
             }
         }
     }
