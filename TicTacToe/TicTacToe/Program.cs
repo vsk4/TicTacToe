@@ -11,6 +11,7 @@ namespace TicTacToeGame
             game.choosePlayerLetter();
             game.showBoard(board);
             game.userMove(board);
+            Console.WriteLine("dfasdf");
         }
     }
 }
