@@ -1,18 +1,15 @@
 ﻿using System;
-
-namespace TicTacToe
+namespace TicTacToeGame
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World! Welcome to TicTacToe game");
-            TicTacTaoBoard newGame = new TicTacTaoBoard();
-            newGame.CreateBoard();
-            newGame.ChooseUserLetter();
-
+            Console.WriteLine("Welcome to TicTacToe Game");
+            TicTacToeGame game = new TicTacToeGame();
+            char[] board = game.createBoard();
+            game.choosePlayerLetter();
+            game.showBoard(board);
         }
-
-       
     }
 }
