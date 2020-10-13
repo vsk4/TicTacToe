@@ -46,5 +46,18 @@ namespace TicTacToeGame
             Console.WriteLine("---------");
             Console.WriteLine(board[7] + " | " + board[8] + " | " + board[9]);
         }
+
+        public void userMove()
+        {
+            int[] freeBoard = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+            Console.WriteLine("Enter your Move[1-9]");
+            int move = Convert.ToInt32(Console.ReadLine());
+            if (move < 10 && move > 0 && freeBoard[move] == 0)
+            {
+                Console.WriteLine("Your Move is Valid");
+                freeBoard[move] = 1;
+
+            }
+        }
     }
 }
