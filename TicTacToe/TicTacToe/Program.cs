@@ -6,18 +6,11 @@ namespace TicTacToe
     {
         static void Main(string[] args)
         {
-            // Console.WriteLine("Hello World!");
-            char[] board = tictactoeBoard();
+            Console.WriteLine("Hello World! Welcome to TicTacToe game");
+            TicTacTaoBoard board = new TicTacTaoBoard();
+            board.CreateBoard();
         }
 
-        private static char[] tictactoeBoard()
-        {
-            char[] board = new char[10];
-            for (int i =0; i< board.Length; i++)
-            {
-                board[i] = ' ';
-            }
-            return board;
-        }
+       
     }
 }
