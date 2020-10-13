@@ -13,5 +13,10 @@ namespace TicTacToe
             }
             return board;
         }
+        public void ChooseUserLetter ()
+        {
+            Console.WriteLine("Enter X or 0");
+            string letter = Console.ReadLine();
+        }
     }
 }
